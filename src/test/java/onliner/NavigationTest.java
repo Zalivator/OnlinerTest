@@ -18,11 +18,11 @@ public class NavigationTest extends BaseTest {
         Label mainMenuItem = new Label(By.xpath(String.format(NAV_MENU_ITEM, "Каталог")));
         mainMenuItem.clickAndWait();
 
-        if (PAGE_TITLE_XPATH.isDisplayed()) {
+        if (!PAGE_TITLE_XPATH.isDisplayed()) {
             System.out.println("ERROR: Страница Каталог не была загружена!");
         }
 
-        Label navMenuOnCatalogPage = new Label(By.xpath(String.format(NAVIGATE_MENU, "Компьютеры")));
+        TextBox navMenuOnCatalogPage = new TextBox(By.xpath(String.format(NAVIGATE_MENU, "Компьютеры")));
         navMenuOnCatalogPage.click();
 
         navMenuOnCatalogPage.moveToElement();
