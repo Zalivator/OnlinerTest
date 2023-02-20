@@ -1,6 +1,12 @@
+framework\elements\Label.class
+framework\elements\BaseElement.class
+OnlinerTest.class
+framework\Browser$1.class
+framework\elements\TextBox.class
 framework\PropertyReader.class
 DP.class
 framework\BaseTest.class
-OnlinerTest.class
+framework\elements\BaseElement$1.class
+framework\Browser.class
 onliner\NavigationTest.class
 framework\DriverFactory.class

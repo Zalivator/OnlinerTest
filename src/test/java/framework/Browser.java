@@ -20,12 +20,16 @@ public class Browser {
     private static String timeoutForPageLoad;
     private static String timeoutForCondition;
 
+    public boolean isBrowserAlive() {
+        return instance != null;
+    }
+
     public Browser getInstance() {
         if (instance == null) {
             initProperties();
             try {
                 driver = DriverFactory.getDriver();
-                driver.manage().timeouts().implicitlyWait(PropertyReader.getIntProperty("timeout.for.page.load"), TimeUnit.SECONDS);
+                driver.manage().timeouts().implicitlyWait(PropertyReader.getIntProperty(DEFAULT_PAGE_LOAD_TIMEOUT), TimeUnit.SECONDS);
             } catch (Exception e) {
                 Assert.fail("Driver does not instance");
             }
@@ -40,11 +44,15 @@ public class Browser {
         timeoutForCondition = props.getProperty(DEFAULT_CONDITION_TIMEOUT);
     }
     public void windowMaximize() {
-        driver.manage().window().maximize();
+        try {
+            driver.manage().window().maximize();
+        } catch (Exception e) {
+            Assert.fail("Page cannot be open!");
+        }
     }
 
-    public void get(String url) {
-        driver.get(url);
+    public void navigate(final String url) {
+        driver.navigate().to(url);
     }
 
     public void exit() {
@@ -57,12 +65,17 @@ public class Browser {
         return getTimeoutForPageLoad();
     }
 
+
     public static String getTimeoutForCondition() {
         return getTimeoutForCondition();
     }
 
     public static WebDriver getDriver() {
         return driver;
+    }
+
+    public String getLocation() {
+        return driver.getCurrentUrl();
     }
 
     public static void waitForPageToLoad() {

@@ -10,7 +10,7 @@ public class BaseTest {
     public void setup(){
         driver.getInstance();
         driver.windowMaximize();
-        driver.get(PropertyReader.getProperty("base.URL"));
+        driver.navigate(PropertyReader.getProperty("base.URL"));
     }
 
     @AfterMethod(alwaysRun = true, description = "Closing browser")

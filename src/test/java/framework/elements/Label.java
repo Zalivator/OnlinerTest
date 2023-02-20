@@ -13,6 +13,6 @@ public class Label extends BaseElement {
 
     @Override
     protected String getElementType() {
-        return "Label";
+        return "Label:";
     }
 }
