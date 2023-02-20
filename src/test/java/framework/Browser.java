@@ -31,7 +31,7 @@ public class Browser {
                 driver = DriverFactory.getDriver();
                 driver.manage().timeouts().implicitlyWait(PropertyReader.getIntProperty(DEFAULT_PAGE_LOAD_TIMEOUT), TimeUnit.SECONDS);
             } catch (Exception e) {
-                Assert.fail("Driver does not instance");
+                Assert.fail("Driver does not instance " + e.getMessage());
             }
             instance = new Browser();
         }
@@ -51,23 +51,27 @@ public class Browser {
         }
     }
 
-    public void navigate(final String url) {
+    public void navigate(String url) {
         driver.navigate().to(url);
     }
 
     public void exit() {
-        if (instance != null){
-            driver.quit();
+        try {
+            if (isBrowserAlive()) driver.quit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            instance = null;
         }
     }
 
     public static  String getTimeoutForPageLoad() {
-        return getTimeoutForPageLoad();
+        return timeoutForPageLoad;
     }
 
 
     public static String getTimeoutForCondition() {
-        return getTimeoutForCondition();
+        return timeoutForCondition;
     }
 
     public static WebDriver getDriver() {
