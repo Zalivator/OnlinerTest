@@ -4,6 +4,7 @@ import framework.BaseTest;
 import framework.elements.Label;
 import framework.elements.TextBox;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class NavigationTest extends BaseTest {
@@ -18,9 +19,7 @@ public class NavigationTest extends BaseTest {
         Label mainMenuItem = new Label(By.xpath(String.format(NAV_MENU_ITEM, "Каталог")));
         mainMenuItem.clickAndWait();
 
-        if (!PAGE_TITLE_XPATH.isDisplayed()) {
-            System.out.println("ERROR: Страница Каталог не была загружена!");
-        }
+        Assert.assertTrue(PAGE_TITLE_XPATH.isDisplayed(), "ERROR: Страница Каталог не была загружена!");
 
         TextBox navMenuOnCatalogPage = new TextBox(By.xpath(String.format(NAVIGATE_MENU, "Компьютеры")));
         navMenuOnCatalogPage.click();
