@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Onliner" class="navigator-link">
-              <span class="suite-name border-passed">Onliner</span>
+              <span class="suite-name border-failed">Onliner</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Onliner" class="hide-methods passed suite-Onliner"> (hide)</a> <!-- hide-methods passed suite-Onliner -->
-                      <a href="#" panel-name="suite-Onliner" class="show-methods passed suite-Onliner"> (show)</a> <!-- show-methods passed suite-Onliner -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Onliner" class="hide-methods failed suite-Onliner"> (hide)</a> <!-- hide-methods failed suite-Onliner -->
+                      <a href="#" panel-name="suite-Onliner" class="show-methods failed suite-Onliner"> (show)</a> <!-- show-methods failed suite-Onliner -->
                     </span>
-                    <div class="method-list-content passed suite-Onliner">
+                    <div class="method-list-content failed suite-Onliner">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Onliner" title="onliner.NavigationTest" class="method navigator-link" hash-for-method="onlinerTest">onlinerTest</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Onliner" title="onliner.FiltrationAuto" class="method navigator-link" hash-for-method="autobaraholkaTest">autobaraholkaTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Onliner -->
+                    </div> <!-- method-list-content failed suite-Onliner -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,21 +118,47 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Onliner" class="panel Onliner">
-          <div class="suite-Onliner-class-passed">
+          <div class="suite-Onliner-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">onliner.NavigationTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">onliner.FiltrationAuto</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="onlinerTest">
-                  </a> <!-- onlinerTest -->
-                  <span class="method-name">onlinerTest</span>
+                  <a name="autobaraholkaTest">
+                  </a> <!-- autobaraholkaTest -->
+                  <span class="method-name">autobaraholkaTest</span>
+                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (302, 1042) is out of bounds of viewport width (1920) and height (955)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [135aef45-c6c0-4f8b-87bd-4abcd3f72e3b, actions {actions=[org.openqa.selenium.interactions.Sequence@5c42b2bd]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.5.0, moz:accessibilityChecks: false, moz:buildID: 20221107191025, moz:debuggerAddress: localhost:14775, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 5948, moz:profile: C:\TEMP\B00044~1\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:14775/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 135aef45-c6c0-4f8b-87bd-4abcd3f72e3b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at framework.elements.BaseElement.moveAndClickByAction(BaseElement.java:127)
+	at onliner.pageObject.AutoBaraholkaPage.choiceGearbox(AutoBaraholkaPage.java:44)
+	at onliner.FiltrationAuto.autobaraholkaTest(FiltrationAuto.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Onliner-class-passed -->
+          </div> <!-- suite-Onliner-class-failed -->
         </div> <!-- panel Onliner -->
         <div panel-name="test-xml-Onliner" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -145,7 +171,7 @@
 &lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Onliner&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;onliner.NavigationTest&quot;/&gt;
+      &lt;class name=&quot;onliner.FiltrationAuto&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- test --&gt;
 &lt;/suite&gt; &lt;!-- Onliner --&gt;
@@ -187,14 +213,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'onlinerTest')
-data.setCell(0, 2, 'onliner.NavigationTest')
-data.setCell(0, 3, 3595);
+data.setCell(0, 1, 'autobaraholkaTest')
+data.setCell(0, 2, 'onliner.FiltrationAuto')
+data.setCell(0, 3, 3836);
 window.suiteTableData['Onliner']= { tableData: data, tableDiv: 'times-div-Onliner'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Onliner">
               </div> <!-- times-div-Onliner -->
             </div> <!-- times-div -->
@@ -220,18 +246,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">onliner.NavigationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">onliner.FiltrationAuto</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">onlinerTest</span>
-                <span class="method-start">4333 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">autobaraholkaTest</span>
+                <span class="method-start">4292 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7929 ms</span>
+                <span class="method-start">8345 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

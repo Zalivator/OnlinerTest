@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.274 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.643 s <<< FAILURE! - in TestSuite
+autobaraholkaTest(onliner.FiltrationAuto)  Time elapsed: 3.848 s  <<< FAILURE!
+org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: 
+(302, 1042) is out of bounds of viewport width (1920) and height (955)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [135aef45-c6c0-4f8b-87bd-4abcd3f72e3b, actions {actions=[org.openqa.selenium.interactions.Sequence@5c42b2bd]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.5.0, moz:accessibilityChecks: false, moz:buildID: 20221107191025, moz:debuggerAddress: localhost:14775, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 5948, moz:profile: C:\TEMP\B00044~1\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:14775/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 135aef45-c6c0-4f8b-87bd-4abcd3f72e3b
+	at onliner.FiltrationAuto.autobaraholkaTest(FiltrationAuto.java:23)
+

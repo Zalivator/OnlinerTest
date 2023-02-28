@@ -6,6 +6,7 @@
         <classes>
             <class name="OnlinerTest"></class>
             <class name="onliner.NavigationTest"></class>
+            <class name="onliner.FiltrationAuto"></class>
         </classes>
     </test>
 </suite>

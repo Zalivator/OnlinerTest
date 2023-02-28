@@ -18,7 +18,7 @@ public class OnlinerTest {
     private static final String NAV_SUBMENU_ITEM = "//div[@class='catalog-navigation-list__aside-title' and contains(text(), 'Ноутбуки, компьютеры, мониторы')]";
 
     @Test
-    public void onlinerTest(){
+    public void onlinerTestOne(){
         WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();

@@ -1,9 +1,16 @@
+onliner\pageObject\AutoBaraholkaPage.class
+onliner\pageObject\CatalogPage.class
 framework\elements\Label.class
+framework\TestListener.class
 framework\elements\BaseElement.class
+onliner\FiltrationAuto.class
 OnlinerTest.class
+framework\elements\Input.class
 framework\Browser$1.class
+framework\elements\Button.class
 framework\elements\TextBox.class
 framework\PropertyReader.class
+onliner\pageObject\MainPage.class
 DP.class
 framework\BaseTest.class
 framework\elements\BaseElement$1.class
