@@ -21,7 +21,8 @@ public class FiltrationAuto extends BaseTest {
         autoBaraholkaPage.entryCarPrice();
         autoBaraholkaPage.choiceOfBodyType();
         autoBaraholkaPage.choiceGearbox();
-        autoBaraholkaPage.isAutoVisible();
+        //autoBaraholkaPage.isAutoVisible();
+        autoBaraholkaPage.viewFiltrationAuto();
     }
     /*
     1. Перейти на вкладку Автобарахолка

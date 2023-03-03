@@ -1,0 +1,198 @@
+# Created at 2023-03-03T12:25:50.880
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+
+# Created at 2023-03-03T12:25:58.788
+Unexpected IOException with stream: Exception: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='vehicle-pagination__main']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [44097333-eca9-4856-9892-949762eeb5c4, findElement {using=xpath, value=//a[@class='vehicle-pagination__main']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.5.0, moz:accessibilityChecks: false, moz:buildID: 20221107191025, moz:debuggerAddress: localhost:1670, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 8716, moz:profile: C:\TEMP\B00044~1\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:1670/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 44097333-eca9-4856-9892-949762eeb5c4
+
+
+# Created at 2023-03-03T12:25:58.824
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:58.873
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:58.933
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:58.983
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:59.033
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:59.082
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:59.132
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:59.182
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:59.232
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:59.282
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:59.332
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:59.380
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:25:59.429
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.464
+Unexpected IOException with stream: Exception: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='vehicle-pagination__main']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [44097333-eca9-4856-9892-949762eeb5c4, findElement {using=xpath, value=//a[@class='vehicle-pagination__main']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.5.0, moz:accessibilityChecks: false, moz:buildID: 20221107191025, moz:debuggerAddress: localhost:1670, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 8716, moz:profile: C:\TEMP\B00044~1\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:1670/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 44097333-eca9-4856-9892-949762eeb5c4
+
+
+# Created at 2023-03-03T12:26:09.499
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.553
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.604
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.656
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.705
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.753
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.802
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.852
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.901
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.950
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:09.998
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:10.048
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:10.098
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.130
+Unexpected IOException with stream: Exception: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='vehicle-pagination__main']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [44097333-eca9-4856-9892-949762eeb5c4, findElement {using=xpath, value=//a[@class='vehicle-pagination__main']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.5.0, moz:accessibilityChecks: false, moz:buildID: 20221107191025, moz:debuggerAddress: localhost:1670, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 8716, moz:profile: C:\TEMP\B00044~1\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:1670/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 44097333-eca9-4856-9892-949762eeb5c4
+
+
+# Created at 2023-03-03T12:26:20.166
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.217
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.267
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.318
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.366
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.415
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.464
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.512
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.562
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.611
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.662
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.713
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
+# Created at 2023-03-03T12:26:20.762
+Unexpected IOException with stream: Label: By.xpath: //div[@class='vehicle-form__offers-item'] - is present
+
+
