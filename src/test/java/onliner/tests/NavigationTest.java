@@ -1,9 +1,9 @@
-package onliner;
+package onliner.tests;
 
 import framework.BaseTest;
 import io.qameta.allure.Description;
-import onliner.pageObject.CatalogPage;
-import onliner.pageObject.MainPage;
+import onliner.pageObject.pages.CatalogPage;
+import onliner.pageObject.pages.MainPage;
 import org.testng.annotations.Test;
 
 public class NavigationTest extends BaseTest {
@@ -12,13 +12,11 @@ public class NavigationTest extends BaseTest {
     @Test
     public void onlinerTest() {
         MainPage mainPage = new MainPage();
-        mainPage.isPageOpened();
-        mainPage.navigateHeaderMenu();
+        mainPage.navigateHeaderMenu("Каталог");
 
         CatalogPage catalogPage = new CatalogPage();
-        catalogPage.isPageOpened();
-        catalogPage.navigateToComputers();
-        catalogPage.navigateToSubMenuItems();
-        catalogPage.navigateToSubMenuCategory();
+        catalogPage.navigateToMainMenuItem("Компьютеры");
+        catalogPage.navigateToSubMenuItems("Ноутбуки, компьютеры, мониторы");
+        catalogPage.navigateToSubMenuCategory("Игровые ноутбуки");
     }
 }

@@ -4,9 +4,9 @@
 <suite name ="Onliner" parallel="tests" thread-count="1">
     <test name="test">
         <classes>
-            <!--<class name="OnlinerTest"></class>
-            <class name="onliner.NavigationTest"></class>-->
-            <class name="onliner.FiltrationAuto"></class>
+            <!--<class name="OnlinerTest"></class>-->
+            <!--<class name="onliner.tests.NavigationTest"></class>-->
+            <class name="onliner.tests.FiltrationAuto"></class>
         </classes>
     </test>
 </suite>

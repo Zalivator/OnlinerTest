@@ -1,9 +1,9 @@
-package onliner;
+package onliner.tests;
 
 import framework.BaseTest;
 import io.qameta.allure.Description;
-import onliner.pageObject.AutoBaraholkaPage;
-import onliner.pageObject.MainPage;
+import onliner.pageObject.pages.AutoBaraholkaPage;
+import onliner.pageObject.pages.MainPage;
 import org.testng.annotations.Test;
 
 public class FiltrationAuto extends BaseTest {
@@ -12,16 +12,13 @@ public class FiltrationAuto extends BaseTest {
     @Test
     public void autobaraholkaTest() {
         MainPage mainPage = new MainPage();
-        mainPage.isPageOpened();
-        mainPage.navigateHeaderMenuAB();
+        mainPage.navigateHeaderMenu("Автобарахолка");
 
         AutoBaraholkaPage autoBaraholkaPage = new AutoBaraholkaPage();
-        autoBaraholkaPage.isPageOpened();
-        autoBaraholkaPage.choiceCurrency();
-        autoBaraholkaPage.entryCarPrice();
-        autoBaraholkaPage.choiceOfBodyType();
-        autoBaraholkaPage.choiceGearbox();
-        //autoBaraholkaPage.isAutoVisible();
+        autoBaraholkaPage.choiceCurrency("USD");
+        autoBaraholkaPage.entryCarPrice("до");
+        autoBaraholkaPage.choiceOfBodyType("Седан");
+        autoBaraholkaPage.choiceGearbox("Автоматическая");
         autoBaraholkaPage.viewFiltrationAuto();
     }
     /*
